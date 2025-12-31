@@ -1,0 +1,370 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>KAJANDAK CONSTRUCTION | Welingara, The Gambia</title>
+  <link rel="stylesheet" href="style.css" />
+
+  <!-- EmailJS (optional for real sending) -->
+  <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+</head>
+<body>
+
+  <!-- Floating WhatsApp -->
+  <a class="wa-float"
+     href="https://wa.me/2203766969?text=Hello%20Kajandak%20Construction,%20I%20need%20a%20quote."
+     target="_blank" rel="noopener">WhatsApp</a>
+
+  <!-- Top Bar -->
+  <div class="topbar">
+    <div class="container topbar-inner">
+      <div class="topbar-left">Welingara, Kombo North District • West Coast Region • The Gambia</div>
+      <div class="topbar-right">
+        <a href="tel:+2203766969">+220-376-6969</a>
+        <a href="mailto:KAJANDAK@AOL.COM">KAJANDAK@AOL.COM</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Header -->
+  <header class="header">
+    <div class="container header-inner">
+      <a class="brand" href="#home">
+        <img class="brand-logo" src="images/kajandak-logo.png" alt="Kajandak Construction Logo"
+             onerror="this.style.display='none'">
+        <div class="brand-text">
+          <div class="brand-name">KAJANDAK CONSTRUCTION</div>
+          <div class="brand-tag">Building with Strength • Safety • Precision</div>
+        </div>
+      </a>
+
+      <button class="menu-btn" id="menuBtn" aria-label="Open menu">☰</button>
+
+      <nav class="nav" id="nav">
+        <a href="#firm">Our Firm</a>
+        <a href="#services">Services</a>
+        <a href="#portfolio">Portfolio</a>
+        <a href="#careers">Careers</a>
+        <a href="#contact">Contact</a>
+        <a class="nav-cta" href="#contact">Book a Call</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- HERO (mimic tidal layout) -->
+  <section class="hero" id="home">
+    <div class="hero-bg" id="heroBg"></div>
+    <div class="hero-overlay"></div>
+
+    <div class="container hero-grid">
+      <!-- Left: headline + watch -->
+      <div class="hero-left">
+        <div class="hero-kicker">GENERAL CONTRACTING • THE GAMBIA</div>
+        <h1>building excellence<br>from the ground up</h1>
+
+        <p class="hero-sub">
+          Kajandak Construction delivers ground-up construction, renovations, and design-assist
+          services—supported by strong planning, clear schedules, and quality site supervision.
+        </p>
+
+        <div class="hero-actions">
+          <button class="btn primary" id="watchBtn" type="button">Watch Now</button>
+          <a class="btn ghost" href="#portfolio">Discover Projects</a>
+        </div>
+
+        <div class="hero-micro">
+          <div class="micro">
+            <span class="micro-title">Pre-Construction</span>
+            <span class="micro-text">Budgets • Scheduling • Site review</span>
+          </div>
+          <div class="micro">
+            <span class="micro-title">Ground-Up</span>
+            <span class="micro-text">Foundation to finishes</span>
+          </div>
+          <div class="micro">
+            <span class="micro-title">Renovations</span>
+            <span class="micro-text">Remodeling & upgrades</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Right: discovery call form -->
+      <aside class="hero-form">
+        <div class="form-title">Arrange a Discovery Call</div>
+        <form id="discoveryForm">
+          <label>Full Name
+            <input type="text" name="from_name" required placeholder="Your name">
+          </label>
+
+          <label>Email
+            <input type="email" name="reply_to" required placeholder="you@email.com">
+          </label>
+
+          <label>Phone Number
+            <input type="tel" name="phone" required placeholder="+220 ...">
+          </label>
+
+          <label>Company / Project Name
+            <input type="text" name="company" required placeholder="Optional">
+          </label>
+
+          <label>Message
+            <textarea name="message" rows="4" required placeholder="Tell us what you want to build..."></textarea>
+          </label>
+
+          <button class="btn primary full" type="submit">Request Call</button>
+          <p class="form-note" id="formNote"></p>
+        </form>
+
+        <div class="form-mini">
+          Prefer WhatsApp? <a href="https://wa.me/2203766969" target="_blank" rel="noopener">Message us</a>
+        </div>
+      </aside>
+    </div>
+  </section>
+
+  <!-- “Video” modal (simple) -->
+  <div class="modal" id="videoModal" aria-hidden="true">
+    <div class="modal-card">
+      <button class="modal-close" id="closeModal" aria-label="Close">✕</button>
+      <div class="modal-title">Kajandak Construction — Highlights</div>
+      <div class="modal-body">
+        <p>
+          Replace this area with a real video link later (YouTube/MP4).
+          For now, it’s a clean modal like the “Watch Now” experience.
+        </p>
+        <div class="modal-tip">
+          Tip: If you have a YouTube link, I can embed it here.
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Firm -->
+  <section class="section" id="firm">
+    <div class="container split">
+      <div class="split-text card">
+        <h2>Meet the future of building</h2>
+        <p>
+          We bring disciplined project delivery—value planning, scheduling, and clear communication—
+          to help clients achieve strong results and reduce avoidable delays.
+        </p>
+        <div class="pill-row">
+          <span class="pill">Value planning</span>
+          <span class="pill">Scheduling</span>
+          <span class="pill">Quality control</span>
+          <span class="pill">Safety</span>
+        </div>
+        <a class="btn ghost" href="#contact">More about our firm</a>
+      </div>
+
+      <div class="split-media">
+        <div class="media-img" style="background-image:url('images/s2.jpeg')"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Services -->
+  <section class="section soft" id="services">
+    <div class="container">
+      <div class="section-head">
+        <h2>revitalizing the past, building the future</h2>
+        <p>Core services aligned to modern construction standards.</p>
+      </div>
+
+      <div class="service-grid">
+        <div class="service card">
+          <div class="service-title">Pre-Construction Services</div>
+          <p>Site review, budgeting, timelines, permits support, and procurement planning.</p>
+        </div>
+        <div class="service card">
+          <div class="service-title">Ground-Up Construction</div>
+          <p>Full scope delivery—foundation, structure, block work, finishing, handover.</p>
+        </div>
+        <div class="service card">
+          <div class="service-title">Project & Construction Management</div>
+          <p>End-to-end oversight to keep your project on track and within budget.</p>
+        </div>
+        <div class="service card">
+          <div class="service-title">Design Assist</div>
+          <p>Fast coordination between design and budget to improve buildability and value.</p>
+        </div>
+        <div class="service card">
+          <div class="service-title">Renovating & Remodeling</div>
+          <p>Adaptive reuse, upgrades, remodeling, repairs, and modernization.</p>
+        </div>
+      </div>
+
+      <div class="section-cta">
+        <a class="btn primary" href="#contact">More about our services</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonial strip -->
+  <section class="quote-strip">
+    <div class="container quote-inner">
+      <div class="quote-mark">“</div>
+      <div class="quote-text">
+        Kajandak Construction delivered strong workmanship and clear communication.
+        The project moved smoothly from planning to execution.
+      </div>
+      <div class="quote-by">— Client Feedback</div>
+    </div>
+  </section>
+
+  <!-- Portfolio -->
+  <section class="section" id="portfolio">
+    <div class="container">
+      <div class="section-head">
+        <h2>our projects</h2>
+        <p>Recent work and progress shots.</p>
+      </div>
+
+      <div class="project-grid">
+        <a class="project card" href="#portfolio">
+          <div class="project-img" style="background-image:url('images/s1.jpeg')"></div>
+          <div class="project-body">
+            <div class="project-title">Structural Frame</div>
+            <div class="project-meta">Concrete & reinforcement</div>
+          </div>
+        </a>
+
+        <a class="project card" href="#portfolio">
+          <div class="project-img" style="background-image:url('images/s3.jpeg')"></div>
+          <div class="project-body">
+            <div class="project-title">Foundation Works</div>
+            <div class="project-meta">Rebar & footing</div>
+          </div>
+        </a>
+
+        <a class="project card" href="#portfolio">
+          <div class="project-img" style="background-image:url('images/s11.jpeg')"></div>
+          <div class="project-body">
+            <div class="project-title">Interior Progress</div>
+            <div class="project-meta">Finishing & details</div>
+          </div>
+        </a>
+
+        <a class="project card" href="#portfolio">
+          <div class="project-img" style="background-image:url('images/s14.jpeg')"></div>
+          <div class="project-body">
+            <div class="project-title">Site Execution</div>
+            <div class="project-meta">Safety & supervision</div>
+          </div>
+        </a>
+      </div>
+
+      <div class="section-cta">
+        <a class="btn ghost" href="#contact">View all projects</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Value blocks -->
+  <section class="section soft">
+    <div class="container">
+      <div class="section-head">
+        <h2>driven by innovation, distinguished by quality</h2>
+        <p>We earn trust through professionalism, strong craftsmanship, and reliable delivery.</p>
+      </div>
+
+      <div class="value-grid">
+        <div class="value card">
+          <h3>Revitalize & Upgrade</h3>
+          <p>Upgrade older structures with modern systems while respecting the original build.</p>
+        </div>
+        <div class="value card">
+          <h3>Tailored for Modern Needs</h3>
+          <p>Custom layouts and finishing levels aligned to your use-case and budget.</p>
+        </div>
+        <div class="value card">
+          <h3>Seamless Execution</h3>
+          <p>Clear timelines and coordination to reduce delays and rework.</p>
+        </div>
+        <div class="value card">
+          <h3>Maximize ROI</h3>
+          <p>Strong quality control and smart material choices to protect investment value.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Careers -->
+  <section class="section" id="careers">
+    <div class="container careers card">
+      <div>
+        <h2>join the future</h2>
+        <p>
+          Join a team committed to quality, safety, and professional execution.
+          Send your CV and role interest.
+        </p>
+      </div>
+      <a class="btn primary" href="mailto:KAJANDAK@AOL.COM?subject=Careers%20-%20Kajandak%20Construction">Careers</a>
+    </div>
+  </section>
+
+  <!-- Contact + Map -->
+  <section class="section soft" id="contact">
+    <div class="container contact-grid">
+      <div class="card">
+        <h2>let’s build together</h2>
+
+        <div class="contact-lines">
+          <div><strong>Phone:</strong> <a href="tel:+2203766969">+220-376-6969</a></div>
+          <div><strong>Email:</strong> <a href="mailto:KAJANDAK@AOL.COM">KAJANDAK@AOL.COM</a></div>
+          <div><strong>Location:</strong> Welingara, Kombo North District, West Coast Region, The Gambia</div>
+        </div>
+
+        <div class="map-box">
+          <div class="map-title">Google Maps</div>
+          <iframe
+            title="Kajandak Construction Map"
+            src="https://www.google.com/maps?q=Welingara%2C%20Kombo%20North%2C%20The%20Gambia&output=embed"
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+          <a class="map-link"
+             href="https://www.google.com/maps/search/?api=1&query=Welingara,+Kombo+North,+The+Gambia"
+             target="_blank" rel="noopener">Open in Google Maps</a>
+        </div>
+      </div>
+
+      <form class="card contact-form" id="quoteForm">
+        <h3>Send a message</h3>
+        <label>Full Name
+          <input required type="text" name="from_name" placeholder="Your name">
+        </label>
+        <label>Phone
+          <input required type="tel" name="phone" placeholder="+220 ...">
+        </label>
+        <label>Email
+          <input type="email" name="reply_to" placeholder="you@email.com">
+        </label>
+        <label>Message
+          <textarea required name="message" rows="5" placeholder="What do you want to build?"></textarea>
+        </label>
+
+        <button class="btn primary full" type="submit">Send</button>
+        <p class="form-note" id="quoteNote"></p>
+      </form>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container footer-inner">
+      <div>© <span id="year"></span> Kajandak Construction</div>
+      <div class="footer-links">
+        <a href="#firm">Our Firm</a>
+        <a href="#services">Services</a>
+        <a href="#portfolio">Portfolio</a>
+        <a href="#contact">Contact</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
